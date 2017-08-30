@@ -46,7 +46,7 @@
 					$val = ($val + 1) % 4; // get the index of new direction. eg 1 for EAST
 					$this->direction =$this->compass->values[$val]; // set current direction
 				} else{ // rotate left
-					// same as above , but with condition checkdate
+					// same as above , but with condition checking
 					$val = $this->compass->keys[$this->direction];
 					$val = ($val - 1);
 					$this->direction = $this->compass->values[ ($val > 0)? $val : 0 ]; // if val<0, set direction to NORTH
